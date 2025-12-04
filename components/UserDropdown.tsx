@@ -36,9 +36,8 @@ const UserDropdown = () => {
                 </div>
             </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent  className='flex relative items-center gap-3 py-2'>
-             <DropdownMenuLabel>
-                 <Avatar className='h-10 w-10'>
+            <DropdownMenuContent className='py-2'>
+            <DropdownMenuLabel className='flex items-center gap-3 px-2'>                 <Avatar className='h-10 w-10'>
                      <AvatarImage src="https://github.com/shadcn.png" />
                      <AvatarFallback className="bg-yellow-500 text-yellow-900 text-sm font-bold">
                          {user.name[0]}
@@ -50,7 +49,7 @@ const UserDropdown = () => {
                     </span>
                      <span className='text-sm text-gray-500'>{user.email}</span>
                  </div>
-             </DropdownMenuLabel>
+            </DropdownMenuLabel>
                 <DropdownMenuSeparator className='bg-gray-600'/>
                 <DropdownMenuItem onClick={handleSignOut} className='text-gray-100 text-md focus:bg-transparent focus:text-yellow-500 transition-colors cursor-pointer'>
                      <LogOut className='h-4 w-4 mr-2 hidden sm:block'/>
