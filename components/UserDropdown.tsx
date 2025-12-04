@@ -36,7 +36,7 @@ const UserDropdown = () => {
                 </div>
             </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent  className='felx relative items-center gap-3 py-2'>
+            <DropdownMenuContent  className='flex relative items-center gap-3 py-2'>
              <DropdownMenuLabel>
                  <Avatar className='h-10 w-10'>
                      <AvatarImage src="https://github.com/shadcn.png" />
